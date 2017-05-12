@@ -1,12 +1,12 @@
 # Minicurso - Ruby on Rails
 Introdução ao Framework de desenvolvimento web *Ruby on Rails* e passo a passo da aplicação de gerenciamento de projetos. Abordaremos aqui os seguintes temas:
 1. Arquitetura MVC
-* Rotas
-* Banco de dados e *migration files*
-* Gerenciador de projetos
-* Gemas e bundler
-* Autenticação com Devise
-* Front-end com bootstrap
+2. Rotas
+3. Banco de dados e *migration files*
+4. Gerenciador de projetos
+5. Gemas e bundler
+6. Autenticação com Devise
+7. Front-end com bootstrap
 ------
 ## Introdução
 Aos que estão no minicurso de Rails, boa tarde! Aos que estão acompanhando o material pelo meu site, bem-vindos!
