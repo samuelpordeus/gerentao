@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Criador</th>
+        <th>Projeto</th>
+        <th>Descrição</th>
+        <th>Ativo</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @projetos.each do |projeto| %>
+        <tr>
+          <td class="col-md-1"><%= projeto.user.email %></td>
+          <td class="col-md-2"><%= projeto.nome %></td>
+          <td class ="col-md-4"><%= projeto.descricao %></td>
+          <% if projeto.terminado %>
+            <td>Inativo</td>
+          <% else %>
+            <td>Ativo</td>
+          <% end %>
+          <td><%= link_to 'Detalhes', projeto %></td>
+          <% if current_user == projeto.user %>
+          <td><%= link_to 'Editar', edit_projeto_path(projeto) %></td>
+          <td><%= link_to 'Concluir', finish_projeto_path(projeto), method: :post %></td>
+          <td><%= link_to 'Apagar', projeto, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= button_to 'Novo Projeto', new_projeto_path, :class => "btn btn-default", :method => :get %>
+</div>
+<br>

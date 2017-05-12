@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  projeto_id: 1
+  nome: MyString
+  terminada: false
+
+two:
+  projeto_id: 1
+  nome: MyString
+  terminada: false
